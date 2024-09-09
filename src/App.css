@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.home{
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  gap: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .home {
+  flex-direction: column;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-img{
+  width: 650px;
+  height: 450px;
+  margin-top: 40px;
+}
+.home-search{
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
+
+}
+.input-container{
+  width: 100%;
+  position: relative;
+}
+.input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; 
+  font-size: 16px;
+  outline: none; 
+  transition: box-shadow 0.2s ease;
+  border: 1px solid #DBDFE9;
+  border-radius: 10px;
+}
+
+.input:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.search-button {
+  position: absolute; 
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  border: none;
+  background-color: white;
+}
+.search-icon {
+  font-size: 18px; 
+  color: #555555;
+}
+
+.search-description{
+  border: 1px solid #DBDFE9;
+  border-radius: 12px;
+  display: flex;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px;
+  width: 360px;
+  height: 186px;
 }
-
-.App-link {
-  color: #61dafb;
+.search-table{
+  border: 1px solid #DBDFE9;
+  border-radius: 12px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 360px;
+  height: 328px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description{
+text-align: center;
+font-weight: 400;
+font-size: 16px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.description-title{
+font-weight: 700;
+font-size: 32px;
+margin: 0px;
 }
