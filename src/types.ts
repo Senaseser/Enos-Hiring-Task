@@ -1,4 +1,5 @@
 export interface DayType {
+    datetime:number,
     valid_date:number,
     temp:number,
     max_temp:number,
@@ -9,3 +10,4 @@ export interface DayType {
     }
     wind_spd:number
 }
+

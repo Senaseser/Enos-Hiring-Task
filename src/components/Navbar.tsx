@@ -1,5 +1,4 @@
-import logo from '../assets/logo.png';
-
+import logo from "../assets/logo.png"
 const Navbar = () => {
   return (
     <div className="navbar">
