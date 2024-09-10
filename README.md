@@ -63,6 +63,8 @@ To run the project locally, follow these steps:
 
 ### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git.`  
 
+and then
+
 ### `cd Enos-Hiring-Task`
 
 2. Install the necessary dependencies:
@@ -84,18 +86,18 @@ The project will run locally and open in your browser at [http://localhost:3000]
 
 ## 📂 Project Structure
 
-**├── public**
-**├── src**
-**│   ├── assets**
-**│   ├── components**
-**│   ├── types**
-**│   ├── App.tsx**
-**│   ├── index.tsx**
-**│   ├── App.css**
-**│   ├── index.css**
-**│   └── ...**
-**├── .gitignore**
-**├── package.json**
+**├── public**  
+**├── src**  
+**│   ├── assets**  
+**│   ├── components**  
+**│   ├── types**  
+**│   ├── App.tsx**  
+**│   ├── index.tsx**  
+**│   ├── App.css**  
+**│   ├── index.css**  
+**│   └── ...**  
+**├── .gitignore**  
+**├── package.json**  
 └── README.md
 
 `components/:` Reusable components of the application.
