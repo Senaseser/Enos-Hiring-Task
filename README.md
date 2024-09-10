@@ -7,26 +7,26 @@ This project is a weather forecasting application developed using React and Type
 ## 🛠️ Technologies
 The main technologies and tools used in this project are:
 
-#### React: 
-A popular JavaScript library for building user interfaces.
-#### TypeScript: 
-A superset of JavaScript that adds static typing to the language.
-#### Weatherbit API: 
-A third-party API used to fetch weather forecast data.
-## CSS3 and Sass: 
-Styling languages used for design and layout.
-## Git: 
-Version control system.
+1. **React:**
+ A popular JavaScript library for building user interfaces.
+2. **TypeScript:**
+ A superset of JavaScript that adds static typing to the language.
+3. **Weatherbit API:**
+ A third-party API used to fetch weather forecast data.
+4. **CSS3 and Sass:**
+ Styling languages used for design and layout.
+5. **Git:**
+ Version control system.
 
 ## 🛠️ Why I Chose TypeScript
 One of the main reasons for using TypeScript in this project is to ensure more reliable and maintainable code. TypeScript, being a superset of JavaScript, provides type safety and static type checking. This helps prevent many errors during development and makes the codebase more understandable.
 ### Benefits of Using TypeScript in This Project:
 
-1. Handling API Responses: With TypeScript, it was easier to validate that the data coming from the API was in the expected format. We defined a DayType interface that represents the structure of each forecast day, making it clear what data fields are expected.
+1. Handling API Responses: With TypeScript, it was easier to validate that the data coming from the API was in the expected format. We defined a `DayType` interface that represents the structure of each forecast day, making it clear what data fields are expected.
 
 2. Component Communication and State Management: The project required a lot of data communication and state management between components. With TypeScript, it is explicitly defined what type of data a component expects, preventing the passing of incorrect data.
 
-3. Improved Code Readability: TypeScript's explicit type definitions make the code easier to understand for other developers or future team members, allowing them to quickly grasp the project and contribute efficiently.
+3. Improved Code Readability
 
 ## 📋 Features
 1. City Weather Search: Users can enter a city name to fetch weather forecast data.
@@ -51,6 +51,8 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
 ### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git.`
+
+and then
 
 ### `cd Enos-Hiring-Task`
 
