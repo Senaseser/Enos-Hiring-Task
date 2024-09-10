@@ -8,7 +8,7 @@ import WeatherTable from './WeatherComponents/WeatherTable';
 import WeatherCard from './WeatherComponents/WeatherCard';
 import { DayType } from '../types/DayType';
 
-const API_KEY = "e55d8a4bb4a7448bbe2d2fa711f5357b";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 const BASE_URL = "https://api.weatherbit.io/v2.0/forecast/daily";
 
 const HomePage = () => {
@@ -19,7 +19,6 @@ const HomePage = () => {
   const [loading,setLoading]= useState<boolean>(false);
 
   const handleSearch = () => {
-    localStorage.clear();
     if (city.trim()) { 
         setLoading(true);
       fetchData(city).then((data) => {
