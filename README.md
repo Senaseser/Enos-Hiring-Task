@@ -60,6 +60,7 @@ The site is mobile-friendly and fully responsive, working seamlessly on all devi
 To run the project locally, follow these steps:
 
 1. Clone the repository:
+Open your terminal and run this commands:
 
 ### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git`  
 
