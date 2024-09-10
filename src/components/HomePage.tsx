@@ -63,7 +63,6 @@ const HomePage = () => {
     } catch (error) {
       return null;
     }
-    
   };
   
   return (
@@ -77,7 +76,6 @@ const HomePage = () => {
         ) : (
          <div className='img-container'> <img className="home-img" src={image2} alt="doesnt-exist" /></div>
         )} 
-      
       </div>
    
       <div className='home-search'>

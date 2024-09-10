@@ -22,37 +22,46 @@ The main technologies and tools used in this project are:
 One of the main reasons for using TypeScript in this project is to ensure more reliable and maintainable code. TypeScript, being a superset of JavaScript, provides type safety and static type checking. This helps prevent many errors during development and makes the codebase more understandable.
 ### Benefits of Using TypeScript in This Project:
 
-1. Handling API Responses: With TypeScript, it was easier to validate that the data coming from the API was in the expected format. We defined a `DayType` interface that represents the structure of each forecast day, making it clear what data fields are expected.
+1. **Handling API Responses:**
+ With TypeScript, it was easier to validate that the data coming from the API was in the expected format. We defined a `DayType` interface that represents the structure of each forecast day, making it clear what data fields are expected.
 
-2. Component Communication and State Management: The project required a lot of data communication and state management between components. With TypeScript, it is explicitly defined what type of data a component expects, preventing the passing of incorrect data.
+2. **Component Communication and State Management:**
+ The project required a lot of data communication and state management between components. With TypeScript, it is explicitly defined what type of data a component expects, preventing the passing of incorrect data.
 
-3. Improved Code Readability
+3. **Improved Code Readability**
 
 ## 📋 Features
-1. City Weather Search: Users can enter a city name to fetch weather forecast data.
+1. **City Weather Search:** 
+Users can enter a city name to fetch weather forecast data.
 
-2. API Integration: Fetches weather data from the Weatherbit API.
+2. **API Integration:** 
+Fetches weather data from the Weatherbit API.
 
-3. Data Display Table: Displays weather data in a tabular format.
+3. **Data Display Table:** 
+Displays weather data in a tabular format.
 
-4. Detailed Data Card: When a user clicks on a day, detailed information for that day is shown on the right-hand card.
+4. **Detailed Data Card:** 
+When a user clicks on a day, detailed information for that day is shown on the right-hand card.
 
-5. Default Day Selection: The first day of the week is selected by default.
+5. **Default Day Selection:** 
+The first day of the week is selected by default.
 
-6. Loading Indicator: Shows a loading indicator while API requests are pending.
+6. **Loading Indicator:** 
+Shows a loading indicator while API requests are pending.
 
-7. Caching Results: Caches results for repeated searches of the same city to minimize API calls.
+7. **Caching Results:** 
+Caches results for repeated searches of the same city to minimize API calls.
 
-8. Responsive Design: The site is mobile-friendly and fully responsive, working seamlessly on all device sizes.
+8. **Responsive Design:** 
+The site is mobile-friendly and fully responsive, working seamlessly on all device sizes.
 
 
 ## 📦 Installation and Usage
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git.`
 
-and then
+### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git.`  
 
 ### `cd Enos-Hiring-Task`
 
@@ -61,7 +70,7 @@ and then
 
 3. Set up your Weatherbit API key:
 
-Create a .env.local file in the root directory of your project and add your API key in the following format:
+Create a `.env.local` file in the root directory of your project and add your API key in the following format:
 
 ### `REACT_APP_WEATHER_API_KEY=your_weatherbit_api_key`
 
