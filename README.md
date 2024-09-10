@@ -61,7 +61,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
 
-### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git.`  
+### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git`  
 
 ### `cd Enos-Hiring-Task`
 
