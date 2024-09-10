@@ -63,9 +63,7 @@ To run the project locally, follow these steps:
 
 ### `git clone https://github.com/Senaseser/Enos-Hiring-Task.git.`  
 
-and then
-
-### `cd Enos-Hiring-Task`
+### `cd Enos-Hiring-Task`
 
 2. Install the necessary dependencies:
 ### `npm install`
