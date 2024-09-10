@@ -6,7 +6,7 @@ import search from "../assets/search.svg";
 import Loading from './Loading';
 import WeatherTable from './WeatherComponents/WeatherTable';
 import WeatherCard from './WeatherComponents/WeatherCard';
-import { DayType } from '../types';
+import { DayType } from '../types/DayType';
 
 const API_KEY = "e55d8a4bb4a7448bbe2d2fa711f5357b";
 const BASE_URL = "https://api.weatherbit.io/v2.0/forecast/daily";
@@ -19,29 +19,23 @@ const HomePage = () => {
   const [loading,setLoading]= useState<boolean>(false);
 
   const handleSearch = () => {
+    localStorage.clear();
     if (city.trim()) { 
-      setLoading(true);
+        setLoading(true);
       fetchData(city).then((data) => {
-        setLoading(false);
-        if (data && data.length > 0) { 
-          setData(data);  
-          setSelectedDay(data[0]); 
+        setLoading(false)
+        if (data) {
+          setData(data.data);  
+          setSelectedDay(data.data[0]);
           setSelectedCity(city);
         } else {
-          setData([]);
           setSelectedDay(null);  
         }
-      }).catch(error => {
-        setLoading(false);
-        setData([]); 
-        setSelectedDay(null); 
       });
     } else {
-      setData([]);
       setSelectedDay(null); 
     }
   };
-  
 
   const handleDayClick = (day: DayType) => {
     setSelectedDay(day);
@@ -53,46 +47,24 @@ const HomePage = () => {
     if (cachedData) {
       return JSON.parse(cachedData);
     }
-  
+   
     try {
-      const response = await fetch(`${BASE_URL}?city=${city}&key=${API_KEY}&days=16&lang=en`); 
-      
+      const response = await fetch(`${BASE_URL}?city=${city}&key=${API_KEY}&days=7`);
+    
       if (!response.ok) {
         throw new Error("Veri alınamadı");
       }
-  
       const data = await response.json();
-  
       if (data && data.data && data.data.length > 0) {
-        const allData: DayType[] = data.data; 
-  
-        const today = new Date("2024-09-15");
-        const startDayWeek = new Date(today);
-        const dayOfWeek = today.getDay();
-        const toMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1; 
-        startDayWeek.setDate(today.getDate() - toMonday);
-  
-        const endDayWeek = new Date(startDayWeek); 
-        endDayWeek.setDate(startDayWeek.getDate() + 7);
-  
-
-        const weeklyData = allData.filter((data: DayType) => {
-          const date = new Date(data.datetime); 
-          return date >= startDayWeek && date < endDayWeek;
-        });
-  
-        if (weeklyData.length > 0) {
-          localStorage.setItem(city, JSON.stringify(weeklyData)); 
-          return weeklyData;
-        } else {
-          return [];
-        }
+        localStorage.setItem(city, JSON.stringify(data));
+        return data;
       } else {
-        return [];
+        return null; 
       }
     } catch (error) {
-      return [];
+      return null;
     }
+    
   };
   
   return (

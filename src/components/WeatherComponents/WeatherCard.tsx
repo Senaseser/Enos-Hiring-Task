@@ -1,4 +1,4 @@
-import { DayType } from "../../types"
+import { DayType } from "../../types/DayType"
 
 interface WeatherCardProps {
 day:DayType,
