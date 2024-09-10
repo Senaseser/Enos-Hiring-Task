@@ -75,37 +75,25 @@ The project will run locally and open in your browser at [http://localhost:3000]
 
 ## 📂 Project Structure
 
-├── public
-
-├── src
-
-│   ├── assets
-
-│   ├── components
-
-│   ├── types
-
-│   ├── App.tsx
-
-│   ├── index.tsx
-
-│   ├── App.css
-
-│   ├── index.css
-
-│   └── ...
-
-├── .gitignore
-
-├── package.json
-
+**├── public**
+**├── src**
+**│   ├── assets**
+**│   ├── components**
+**│   ├── types**
+**│   ├── App.tsx**
+**│   ├── index.tsx**
+**│   ├── App.css**
+**│   ├── index.css**
+**│   └── ...**
+**├── .gitignore**
+**├── package.json**
 └── README.md
 
-components/: Reusable components of the application.
+`components/:` Reusable components of the application.
 
-types/: TypeScript type definitions.
+`types/:` TypeScript type definitions.
 
-assets/: Images and styling files.
+`assets/:` Images files.
 
 ## 🌍 API Usage
 
